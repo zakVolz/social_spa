@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.42edaf4b.chunk.css",
-    "main.js": "./static/js/main.0a4bfbd6.chunk.js",
-    "main.js.map": "./static/js/main.0a4bfbd6.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.43d35e8d.js",
-    "runtime-main.js.map": "./static/js/runtime-main.43d35e8d.js.map",
-    "static/js/2.1f59bbe8.chunk.js": "./static/js/2.1f59bbe8.chunk.js",
-    "static/js/2.1f59bbe8.chunk.js.map": "./static/js/2.1f59bbe8.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.b7bfbecb3f10e65b50e9b0fad9c6d560.js": "./precache-manifest.b7bfbecb3f10e65b50e9b0fad9c6d560.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.42edaf4b.chunk.css.map": "./static/css/main.42edaf4b.chunk.css.map",
-    "static/js/2.1f59bbe8.chunk.js.LICENSE.txt": "./static/js/2.1f59bbe8.chunk.js.LICENSE.txt",
-    "static/media/App.css": "./static/media/MontserratRegular.9db6c54c.woff",
-    "static/media/Profile.css": "./static/media/cover.75f567bc.jpg",
-    "static/media/Post.css": "./static/media/like-inactive.fda31f68.png"
+    "main.css": "./social_spa/static/css/main.42edaf4b.chunk.css",
+    "main.js": "./social_spa/static/js/main.f8f4ae20.chunk.js",
+    "main.js.map": "./social_spa/static/js/main.f8f4ae20.chunk.js.map",
+    "runtime-main.js": "./social_spa/static/js/runtime-main.319d4d94.js",
+    "runtime-main.js.map": "./social_spa/static/js/runtime-main.319d4d94.js.map",
+    "static/js/2.1f59bbe8.chunk.js": "./social_spa/static/js/2.1f59bbe8.chunk.js",
+    "static/js/2.1f59bbe8.chunk.js.map": "./social_spa/static/js/2.1f59bbe8.chunk.js.map",
+    "index.html": "./social_spa/index.html",
+    "precache-manifest.30990c97552465445ed0b46f876fd194.js": "./social_spa/precache-manifest.30990c97552465445ed0b46f876fd194.js",
+    "service-worker.js": "./social_spa/service-worker.js",
+    "static/css/main.42edaf4b.chunk.css.map": "./social_spa/static/css/main.42edaf4b.chunk.css.map",
+    "static/js/2.1f59bbe8.chunk.js.LICENSE.txt": "./social_spa/static/js/2.1f59bbe8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "./social_spa/static/media/MontserratRegular.9db6c54c.woff",
+    "static/media/Profile.css": "./social_spa/static/media/cover.75f567bc.jpg",
+    "static/media/Post.css": "./social_spa/static/media/like-inactive.fda31f68.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.43d35e8d.js",
+    "static/js/runtime-main.319d4d94.js",
     "static/js/2.1f59bbe8.chunk.js",
     "static/css/main.42edaf4b.chunk.css",
-    "static/js/main.0a4bfbd6.chunk.js"
+    "static/js/main.f8f4ae20.chunk.js"
   ]
 }
