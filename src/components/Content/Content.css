@@ -1,7 +1,0 @@
-.content {
-    grid-area: content;
-    background: #4D686B;
-    padding: 20px;
-    height: calc(100vh - 110px);
-    overflow-y: auto;
-}
