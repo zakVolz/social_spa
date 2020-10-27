@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.64b54745.chunk.css",
-    "main.js": "/static/js/main.2805580d.chunk.js",
-    "main.js.map": "/static/js/main.2805580d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ef23f142.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ef23f142.js.map",
-    "static/js/2.1f59bbe8.chunk.js": "/static/js/2.1f59bbe8.chunk.js",
-    "static/js/2.1f59bbe8.chunk.js.map": "/static/js/2.1f59bbe8.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.3f47593aee915884ec17b6317213cd9a.js": "/precache-manifest.3f47593aee915884ec17b6317213cd9a.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.64b54745.chunk.css.map": "/static/css/main.64b54745.chunk.css.map",
-    "static/js/2.1f59bbe8.chunk.js.LICENSE.txt": "/static/js/2.1f59bbe8.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/MontserratRegular.9db6c54c.woff",
-    "static/media/Profile.css": "/static/media/cover.75f567bc.jpg",
-    "static/media/Post.css": "/static/media/like-inactive.fda31f68.png"
+    "main.css": "./static/css/main.42edaf4b.chunk.css",
+    "main.js": "./static/js/main.7b087311.chunk.js",
+    "main.js.map": "./static/js/main.7b087311.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.43d35e8d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.43d35e8d.js.map",
+    "static/js/2.1f59bbe8.chunk.js": "./static/js/2.1f59bbe8.chunk.js",
+    "static/js/2.1f59bbe8.chunk.js.map": "./static/js/2.1f59bbe8.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.53f411428c75afb918c5ed08864dc9ec.js": "./precache-manifest.53f411428c75afb918c5ed08864dc9ec.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.42edaf4b.chunk.css.map": "./static/css/main.42edaf4b.chunk.css.map",
+    "static/js/2.1f59bbe8.chunk.js.LICENSE.txt": "./static/js/2.1f59bbe8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "./static/media/MontserratRegular.9db6c54c.woff",
+    "static/media/Profile.css": "./static/media/cover.75f567bc.jpg",
+    "static/media/Post.css": "./static/media/like-inactive.fda31f68.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef23f142.js",
+    "static/js/runtime-main.43d35e8d.js",
     "static/js/2.1f59bbe8.chunk.js",
-    "static/css/main.64b54745.chunk.css",
-    "static/js/main.2805580d.chunk.js"
+    "static/css/main.42edaf4b.chunk.css",
+    "static/js/main.7b087311.chunk.js"
   ]
 }
