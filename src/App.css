@@ -1,0 +1,35 @@
+@import url('./vendor/fonts.css');
+@import url('./vendor/normalize.css');
+
+.root {
+  font-family: Calibri;
+  color: #fff;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "header header" "nav content";
+  grid-gap: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #A4A4A4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5F827F;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #69908D;
+}
