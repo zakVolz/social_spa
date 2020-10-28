@@ -4,16 +4,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store from './redux/reduxStore';
+import { Provider } from 'react-redux';
 
 const renderEntireTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
-      <App state={state} dispatch={store.dispatch.bind(store)} />
+      <Provider store={store} >
+        <App state={state} dispatch={store.dispatch.bind(store)} />
+      </Provider>
     </React.StrictMode>,
     document.getElementById('root')
   );
 };
-
+window.store = store.getState();
 // Рендер приложения при загрузке страницы
 renderEntireTree(store.getState());
 // Рендер приложения при обновлении state

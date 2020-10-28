@@ -1,5 +1,5 @@
 import React from 'react';
-import Posts from './Posts/Posts';
+import PostsContainer from './Posts/PostsContainer';
 import './Profile.css';
 import SendContainer from './Send/SendContainer';
 
@@ -17,8 +17,8 @@ const Profile = (props) => {
           <p className='profile__item'>Site: <a href='https://news-explorer-project.tk/' target="_blank" rel="noreferrer noopener" className='profile__link'>https://news-explorer-project.tk/</a></p>
         </div>
       </div>
-      <SendContainer state={props.state} dispatch={props.dispatch} />
-      <Posts postsData={props.state.posts} dispatch={props.dispatch} />
+      <SendContainer />
+      <PostsContainer postsData={props.state.posts} dispatch={props.dispatch} />
     </div>
   )
 }

@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import FriendsBox from './FriendsBox/FriendsBox';
 import './Nav.css';
 
 const Nav = (props) => {
-  const renderFriends = props.state.map(el => <FriendsBox id={el.id} avatar={el.avatar} name={el.name} key={el.id} />);
   return (
     <nav className='nav'>
       <ul className='nav__list'>
@@ -16,7 +14,7 @@ const Nav = (props) => {
       </ul>
       <NavLink to='/friends' className='friends-box__title'>Friends</NavLink>
       <ul className='friends-box__list'>
-        {renderFriends}
+        {props.renderFriends}
       </ul>
     </nav>
   )

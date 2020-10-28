@@ -20,23 +20,25 @@ const renderLikesCounter = (id, value) => {
 };
 
 const profileReducer = (state = initialStore, action) => {
+  let stateCopy = { ...state };
+  stateCopy.posts = [...state.posts];
   switch (action.type) {
     case UPDATE_TEXT_POST:
-      state.newPostText = action.text;
-      return state;
+      stateCopy.newPostText = action.text;
+      return stateCopy;
     case ADD_POST:
-      let idCounerPost = state.posts.length + 1;
+      let idCounerPost = stateCopy.posts.length + 1;
       const newPost = {
-        id: idCounerPost, text: state.newPostText, likeCounter: 0
+        id: idCounerPost, text: stateCopy.newPostText, likeCounter: 0
       };
-      state.posts.unshift(newPost);
-      state.newPostText = '';
-      return state;
+      stateCopy.posts.unshift(newPost);
+      stateCopy.newPostText = '';
+      return stateCopy;
     case UPDATE_LIKES_COUNTER:
       renderLikesCounter(action.id, action.value);
-      return state;
+      return stateCopy;
     default:
-      return state;
+      return stateCopy;
   }
 };
 

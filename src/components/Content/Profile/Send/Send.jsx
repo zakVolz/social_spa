@@ -10,7 +10,7 @@ const Send = (props) => {
           className='send__input'
           placeholder='your news...'
           onChange={props.onChangePostText}
-          value={props.state.newPostText}
+          value={props.profilePage.newPostText}
           required />
         <button className='send__button'>Send</button>
       </form>

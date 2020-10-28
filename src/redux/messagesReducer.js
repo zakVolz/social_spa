@@ -21,20 +21,22 @@ const initialStore = {
 };
 
 const messagesReducer = (state = initialStore, action) => {
+  let stateCopy = { ...state };
+  stateCopy.messages = [...state.messages];
   switch (action.type) {
     case UPDATE_TEXT_MESSAGE:
-      state.newMessageText = action.text;
-      return state;
+      stateCopy.newMessageText = action.text;
+      return stateCopy;
     case ADD_MESSAGE:
-      let idCounerMessage = state.messages.length + 1;
+      let idCounerMessage = stateCopy.messages.length + 1;
       const newMessage = {
-        id: idCounerMessage, avatar: 'https://goo.su/2FIK', sort: 'from', text: state.newMessageText
+        id: idCounerMessage, avatar: 'https://goo.su/2FIK', sort: 'from', text: stateCopy.newMessageText
       };
-      state.messages.push(newMessage);
-      state.newMessageText = '';
-      return state;
+      stateCopy.messages.push(newMessage);
+      stateCopy.newMessageText = '';
+      return stateCopy;
     default:
-      return state;
+      return stateCopy;
   }
 }
 

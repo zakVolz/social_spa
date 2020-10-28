@@ -1,19 +1,26 @@
-import React from 'react';
+import { connect } from 'react-redux';
 import { actionOnChangePostText, actionSendPost } from '../../../../redux/profileReducer';
 import Send from './Send';
 
-const SendContainer = (props) => {
-  const onChangePostText = (e) => {
-    const text = e.target.value;
-    props.dispatch(actionOnChangePostText(text));
+const mapStateToProps = (state) => {
+  return {
+    profilePage: state.profilePage
   }
-  const sendPost = (e) => {
-    e.preventDefault();
-    props.dispatch(actionSendPost());
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onChangePostText: (e) => {
+      const text = e.target.value;
+      dispatch(actionOnChangePostText(text));
+    },
+    sendPost: (e) => {
+      e.preventDefault();
+      dispatch(actionSendPost());
+    }
   }
-  return <Send onChangePostText={onChangePostText}
-    sendPost={sendPost}
-    state={props.state} />
-}
+};
+
+const SendContainer = connect(mapStateToProps, mapDispatchToProps)(Send);
 
 export default SendContainer;

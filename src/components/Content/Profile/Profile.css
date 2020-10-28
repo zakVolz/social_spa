@@ -9,14 +9,14 @@
 .profile__user {
     display: flex;
     min-height: 300px;
+    border-bottom: 2px solid #fff;
 }
 
 .profile__avatar {
-    background: url(../../../images/avatar.jpg);
+    background: url(../../../images/avatar.png);
     min-width: 200px;
     height: auto;
-    background-size: cover;
-    background-position: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 0 20px 0 0;
 }

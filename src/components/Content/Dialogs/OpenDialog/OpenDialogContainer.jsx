@@ -1,28 +1,26 @@
-import React from 'react';
-import Message from './Message/Message';
 import { actionOnChangeMessageText, actionSendMessage } from '../../../../redux/messagesReducer';
 import OpenDialog from './OpenDialog';
+import { connect } from 'react-redux';
 
-const OpenDialogContainer = (props) => {
-  const renderMessages = props.state.messages
-    .map(el => <Message avatar={el.avatar} sort={el.sort} text={el.text} key={el.id} />);
-
-  const onChangeMessageText = (e) => {
-    const text = e.target.value;
-    props.dispatch(actionOnChangeMessageText(text));
+const mapStateToProps = (state) => {
+  return {
+    messagesPage: state.messagesPage,
   }
+};
 
-  const sendMessage = (e) => {
-    e.preventDefault();
-    props.dispatch(actionSendMessage());
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onChangeMessageText: (e) => {
+      const text = e.target.value;
+      dispatch(actionOnChangeMessageText(text));
+    },
+    sendMessage: (e) => {
+      e.preventDefault();
+      dispatch(actionSendMessage());
+    }
   }
+};
 
-  return (
-    <OpenDialog renderMessages={renderMessages}
-      onChangeMessageText={onChangeMessageText}
-      sendMessage={sendMessage}
-      state={props.state} />
-  )
-}
+const OpenDialogContainer = connect(mapStateToProps, mapDispatchToProps)(OpenDialog);
 
 export default OpenDialogContainer;
