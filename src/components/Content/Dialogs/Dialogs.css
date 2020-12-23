@@ -1,0 +1,17 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: calc(100vh - 110px);
+}
+
+.dialogs__title {
+  margin: 0 0 20px;
+}
+
+.dialogs__list {
+  padding: 0;
+  list-style-type: none;
+  overflow-y: auto;
+  height: calc(100vh - 90px);
+  margin: 0;
+}

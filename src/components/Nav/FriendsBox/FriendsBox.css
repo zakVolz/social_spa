@@ -1,0 +1,27 @@
+.friends-box__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 75px 75px;
+  grid-gap: 5px;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.friends-box__item {
+  text-align:  center;
+}
+
+.friends-box__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.friends-box__avatar {
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 30px;
+}

@@ -1,0 +1,48 @@
+.send {
+    margin: 0 0 20px;
+}
+
+.send__title {
+    font-size: 25px;
+}
+
+.send__form {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.send__input {
+    padding: 10px;
+    min-height: 40px;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    margin: 0 0 7px;
+}
+
+.send__input:focus {
+    border-color: transparent;
+    outline: none;
+}
+
+.send__button {
+    width: 13%;
+    font-size: 18px;
+    font-weight: bold;
+    background: #DCEFE9;
+    border: none;
+}
+
+.send__button:hover {
+    cursor: pointer;
+    background: #B3DCD7;
+}
+
+.send__button:focus {
+    outline: none;
+}
+
+.send__button:active {
+    background: #77A39F;
+}
